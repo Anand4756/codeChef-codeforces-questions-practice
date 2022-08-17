@@ -1,0 +1,43 @@
+//tcs nqt previous year practice
+//iven a string S(input consisting) of ‘*’ and ‘#’. The length of the string is variable. The task is to find the minimum number of ‘*’ or ‘#’ to make it a valid string. The string is considered valid if the number of ‘*’ and ‘#’ are equal. The ‘*’ and ‘#’ can be at any position in the string.
+
+import java.util.*;
+class otherprogram
+{
+	public static void main(String[] args) {
+	   //System.out.println();
+	   Scanner sc = new Scanner(System.in);
+	   int n = sc.nextInt();
+		while(n-->0){
+			String s = sc.next();
+			
+			int hcount = 0;
+			int scount = 0;
+			
+			for(char c:s.toCharArray()){
+				if(c=='#'){
+					hcount++;
+				}else{
+					scount++;
+				}
+			}
+			
+			if(hcount==scount){
+				System.out.println(0);
+			}else{
+				System.out.println(Math.abs(hcount-scount));
+			}
+			
+			
+			
+			
+			
+		}
+			
+		
+	}
+	
+    
+   
+
+}
